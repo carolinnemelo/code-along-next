@@ -1,4 +1,11 @@
-
+function createIceCreamServices() {
+  return {
+    async getAll() {
+      return []; // if you put one inside the array, there will be a length and the message won't appear 
+    },
+  }; //short hand code, func declaration inline
+}
+const iceCreamService = createIceCreamServices();
 
 export default async function Home() {
   const iceCreams = await iceCreamService.getAll();
