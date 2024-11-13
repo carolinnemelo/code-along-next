@@ -1,7 +1,7 @@
 
 
 export default async function Home() {
-  const iceCreams = await [];
+  const iceCreams = await iceCreamService.getAll();
 
   return (
     <>
